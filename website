@@ -4,11 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GSAP Animation</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Internal CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .content {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
 </head>
 <body>
-// Fade in animation using GSAP
-gsap.from(".content", { opacity: 0, duration: 1, y: -50, ease: "power2.out" });
 
   <header>
     <h1>Welcome to My GSAP Website</h1>
@@ -17,7 +45,7 @@ gsap.from(".content", { opacity: 0, duration: 1, y: -50, ease: "power2.out" });
   <main>
     <section class="content">
       <h2>About Me</h2>
-      <p>This is a simple website showcasing the usage of GSAP for animations along with CSS for styling.</p>
+      <p>This is a simple website showcasing the usage of GSAP for animations along with internal CSS for styling.</p>
     </section>
   </main>
 
@@ -26,6 +54,9 @@ gsap.from(".content", { opacity: 0, duration: 1, y: -50, ease: "power2.out" });
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-  <script src="scripts.js"></script>
+  <script>
+    // GSAP animation
+    gsap.from(".content", { opacity: 0, duration: 1, y: -50, ease: "power2.out" });
+  </script>
 </body>
 </html>
