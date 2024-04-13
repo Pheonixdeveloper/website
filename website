@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+// Fade in animation using GSAP
+gsap.from(".content", { opacity: 0, duration: 1, y: -50, ease: "power2.out" });
 
   <header>
     <h1>Welcome to My GSAP Website</h1>
